@@ -1,7 +1,12 @@
-SpreeHiddenProperties
+Spree Hidden Properties
 =====================
 
-Simple gem that allows you to set a product property which can be hidden on the public product page. It adds a `hidden` boolean attribute to the `spree_product_properties` table, 
+Simple gem that allows you to set a product property which can be hidden on the public product page. It does the follwing:
+
+1. Adds a `hidden` boolean attribute to the `spree_product_properties` table
+2. Adds an initializer which permits the new :hidden parameter on the model's properties
+3. Using Deface, updates the admin Product Propeties table to include a "Hidden" checkbox
+4. Using Deface, updates the front-facing  Product page to not display a hidden property
 
 ## Installation
 
