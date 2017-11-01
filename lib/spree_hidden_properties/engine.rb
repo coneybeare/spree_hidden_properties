@@ -8,6 +8,10 @@ module SpreeHiddenProperties
     config.generators do |g|
       g.test_framework :rspec
     end
+    
+    initializer 'spree_hidden_properties.custom_permitted_params', after: 'spree.environment' do |app|
+      Spree::Api::ApiHelpers.product_property_attributes << :hidden
+    end
 
     def self.activate
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|

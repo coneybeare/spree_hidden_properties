@@ -1,3 +1,5 @@
+Spree::Api::ApiHelpers.product_property_attributes << :hidden
+
 Deface::Override.new(virtual_path: 'spree/admin/product_properties/index',
   name: 'add_hidden_attribute_to_product_property_index',
   insert_after: "erb[loud]:contains('Spree.t(:value)')",

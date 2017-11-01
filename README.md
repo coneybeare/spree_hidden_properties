@@ -1,13 +1,13 @@
 SpreeHiddenProperties
 =====================
 
-Introduction goes here.
+Simple gem that allows you to set a product property which can be hidden on the public product page. It adds a `hidden` boolean attribute to the `spree_product_properties` table, 
 
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_hidden_properties', github: '[your-github-handle]/spree_hidden_properties'
+  gem 'spree_hidden_properties', github: 'coneybeare/spree_hidden_properties'
   ```
 
 2. Install the gem using Bundler:
